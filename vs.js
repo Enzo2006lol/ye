@@ -1,5 +1,3 @@
-import fs from 'node:fs'
+import {writeFile} from "node:fs/promises"
 
-
-const content = fs.readFileSync('demo.txt', {encoding: 'ascii'})
-console.log(content)
+writeFile("demo.txt", "fezofizeofze", {flag: "a"})
